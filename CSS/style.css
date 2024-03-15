@@ -308,7 +308,8 @@ a:hover {
 .proyecto{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;  
+    align-items: center; 
+    justify-content: center;
 }
 
 .proyecto-imagen{
