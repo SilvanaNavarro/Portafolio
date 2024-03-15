@@ -62,7 +62,7 @@ a:hover {
 
 .barra h2 {
     font-size: 1rem;
-    color: var(black);
+    color: var(--colorFuenteOscura);
 }
 
 .DarkBarra{
@@ -239,7 +239,11 @@ a:hover {
 }
 
 .direccion-github {
-    color: var(purple);
+    color: var(--colorFuenteOscura);
+}
+
+.DarkMode .direccion-github{
+    color: var(--claro2);
 }
 
 .barra-lenguajes {
@@ -273,14 +277,14 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0  0.4rem ;
+    padding:0  0.15rem ;
     border: black solid 2px;
 }
 
 .interruptor{
     position: absolute;
-    height: 2.7rem;
-    width: 2.7rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: var(--claro2);
     border-radius:2.5rem;
     margin-left: 0;
@@ -292,9 +296,16 @@ a:hover {
     color: white;
 }
 
+
 .DarkMode .interruptor{
     background-color: var(--colorFuenteOscura2);
-    margin-left: 3.1rem;
+    margin-left: 2.3rem;
+}
+
+@media (min-width:600px){
+    .DarkMode .interruptor{
+        margin-left: 3.1rem;
+    }
 }
 
 .proyectos {

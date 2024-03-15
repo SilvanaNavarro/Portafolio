@@ -5,6 +5,7 @@ const barra=document.querySelector('.barra')
 const resumen=document.querySelector('.Resumen')
 const barraLenguajes=document.querySelector('.barra-lenguajes')
 const interruptor=document.querySelector('.interruptor')
+const direccion_github=document.querySelector('.direccion-github')
 modo.addEventListener('click',e);
 
 function e(){
@@ -14,6 +15,7 @@ function e(){
     resumen.classList.toggle('DarkResumen')
     barraLenguajes.classList.toggle('DarkBarraLenguajes')
     interruptor.classList.toggle('DarkMode')
+    direccion_github.classList.toggle('DarkMode')
 }
 
 
