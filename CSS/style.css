@@ -264,10 +264,6 @@ a:hover {
     max-width: 6rem;
 }
 
-.proyectos {}
-
-.contacto {}
-
 .switch{
     width: 6rem;
     height: 3rem;
@@ -301,10 +297,32 @@ a:hover {
     margin-left: 3.1rem;
 }
 
-.proyectos{
-    width: 20rem;
-    height: 40 rem;
+.proyectos {
+}
+
+.proyecto{
+    display: flex;
+    width: 80rem;
+    align-items: center;
+    
+}
+.proyecto-imagen{
+    margin: 2rem;
+    width: 40rem;
+    height: 20rem;
     background-color: pink;
 }
 
+.proyecto p{
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto p span{
+    text-align: center;
+    font-size: var(--fuente2);
+    font-weight: bold;
+}
+
+.contacto {}
 
