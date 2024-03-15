@@ -6,16 +6,64 @@ const resumen=document.querySelector('.Resumen')
 const barraLenguajes=document.querySelector('.barra-lenguajes')
 const interruptor=document.querySelector('.interruptor')
 const direccion_github=document.querySelector('.direccion-github')
-modo.addEventListener('click',e);
+const nombre=document.querySelector('#nombre')
+const telefono=document.querySelector('#telefono')
+const email=document.querySelector('#email')
+const mensaje=document.querySelector('#mensaje')
+const formulario=document.querySelector('.formulario')
+const datos={
+    nombre:'',
+    telefono:'',
+    email:'',
+    mensaje:''
+}
 
-function e(){
+modo.addEventListener('click',modoOscuro)
+
+nombre.addEventListener('input',leerfuncion);
+telefono.addEventListener('input',leerfuncion);
+email.addEventListener('input',leerfuncion);
+mensaje.addEventListener('input',leerfuncion);
+formulario.addEventListener('submit',validar)
+
+function leerfuncion(e){
+    datos[e.target.id]=e.target.value;
+}
+
+function modoOscuro(){
     modo.classList.toggle('DarkMode')
     ModoOscuro.classList.toggle('DarkMode')
     barra.classList.toggle('DarkBarra')
     resumen.classList.toggle('DarkResumen')
     barraLenguajes.classList.toggle('DarkBarraLenguajes')
-    interruptor.classList.toggle('DarkMode')
-    direccion_github.classList.toggle('DarkMode')
+};
+
+function validar(e){
+    e.preventDefault();
+    const {nombre,telefono,email,mensaje}=datos;
+    if(nombre===''||telefono===''||email===''||mensaje===''){
+        mostrarAlerta('Llene todos los campos',e);
+        return
+    }
+    mostrarAlerta('Enviado con éxito');
+}
+
+function mostrarAlerta(mensaje,error=null){
+    const alerta=document.createElement('P');
+    alerta.textContent=mensaje;
+    
+    if(error){
+        alerta.classList.add('error');
+    }
+    else{
+        alerta.classList.add('correcto');
+    }
+
+    formulario.appendChild(alerta);
+
+    setTimeout(()=>{
+        alerta.remove();
+    },5000);
 }
 
 
