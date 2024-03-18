@@ -67,7 +67,8 @@ a:hover {
 }
 
 .DarkBarra{
-    background: linear-gradient(to right, black, purple);   
+    background: linear-gradient(to right, black, purple); 
+    color:white  
 }
 
 .DarkBarra h2{
@@ -371,5 +372,16 @@ a:hover {
     max-width: 80rem;
     max-height: 10rem;
     background-color: blue;
+}
+
+footer{
+    height: 2rem;
+    max-width: 100rem;
+    background: linear-gradient(to right, var(--fondoClaro2),var(--fondoClaro));
+    color:var(--colorFuenteOscura2);
+    font-family: var(--fuente1);
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
 }
 

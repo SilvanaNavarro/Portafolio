@@ -11,6 +11,7 @@ const telefono=document.querySelector('#telefono')
 const email=document.querySelector('#email')
 const mensaje=document.querySelector('#mensaje')
 const formulario=document.querySelector('.formulario')
+const footer=document.querySelector('FOOTER')
 const datos={
     nombre:'',
     telefono:'',
@@ -36,6 +37,7 @@ function modoOscuro(){
     barra.classList.toggle('DarkBarra')
     resumen.classList.toggle('DarkResumen')
     barraLenguajes.classList.toggle('DarkBarraLenguajes')
+    footer.classList.toggle('DarkBarra')
 };
 
 function validar(e){
