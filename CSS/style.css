@@ -8,10 +8,10 @@
     --hover: hsla(308, 100%, 60%, 0.329);
     --hover-oscuro: rgb(58, 0, 58);
     --Fuente-grande: 4rem;
-    --fondoClaro:rgb(236, 158, 236);
+    --fondoClaro:rgb(167, 127, 231);
     --fondoClaro2:rgb(233, 227, 227);
     --colorFuenteOscura:rgb(92, 0, 128);
-    --colorFuenteOscura2:rgb(133, 73, 133);
+    --colorFuenteOscura2:rgb(114, 46, 192);
 
 }
 
@@ -88,7 +88,7 @@ a:hover {
 
 .barra span {
     font-size: 0.8rem;
-    color: var(purple);
+    color: var(--colorFuenteOscura2);
 }
 
 .DarkBarra span{
@@ -328,7 +328,6 @@ a:hover {
     margin: 2rem;
     max-width: 40rem;
     max-height: 20rem;
-    background-color: pink;
 }
 
 .proyecto p{
