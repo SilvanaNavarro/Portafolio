@@ -322,6 +322,7 @@ a:hover {
     text-align: center;
     font-size: var(--fuente2);
     font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 .contacto {
@@ -361,7 +362,7 @@ footer{
 }
 
 
-/*---------------Modo Oscuro----------------------*/
+/*--------------------Modo Oscuro-----------------------------------------*/
 
 .DarkBarra{
     background: linear-gradient(to right, black, purple); 
