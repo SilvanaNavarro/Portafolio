@@ -37,8 +37,6 @@ h2 {
     text-align: center;
 }
 
-
-
 a {
     text-decoration: none;
 }
@@ -62,17 +60,8 @@ a:hover {
 }
 
 .barra h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--colorFuenteOscura);
-}
-
-.DarkBarra{
-    background: linear-gradient(to right, black, purple); 
-    color:white  
-}
-
-.DarkBarra h2{
-    color: var(--claro);
 }
 
 @media(min-width:480px) {
@@ -88,12 +77,8 @@ a:hover {
 }
 
 .barra span {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--colorFuenteOscura2);
-}
-
-.DarkBarra span{
-    color: var(--claro2);
 }
 
 @media(min-width:480px) {
@@ -124,10 +109,6 @@ a:hover {
     align-items: center;
 }
 
-.DarkResumen{
-    background-color: var(--fondo);
-}
-
 .Resumen-texto {
     grid-column: 1/5;
     margin-left: 2rem;
@@ -142,11 +123,7 @@ a:hover {
     font-size: 2rem;
 }
 
-.DarkResumen h1{
-    color: var(--claro);
-}
-
-@media(min-width:570px) {
+@media(min-width:480px) {
     .Resumen-texto h1 {
         font-size: 3rem;
     }
@@ -163,16 +140,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
-.DarkResumen h2{
-    color: var(--claro2);
-}
-
-@media(min-width:570px) {
+@media(min-width:480px) {
     .Resumen-texto h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -189,10 +162,6 @@ a:hover {
     align-items: center;
     max-width: 15rem;
     color: var(--colorFuenteOscura);
-}
-
-.DarkResumen a{
-    color: antiquewhite;
 }
 
 .Resumen-texto_ubicacion:hover {
@@ -217,7 +186,6 @@ a:hover {
     }
 }
 
-
 .presentacion {
     display: grid;
     grid-template-columns: (4, 1fr);
@@ -226,6 +194,20 @@ a:hover {
 
 .presentacion p {
     padding: 1rem;
+    font-family: var(--fuente2);
+    font-size: 1.1rem;
+}
+
+@media(min-width:480px){
+    .presentacion p{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width:648px){
+    .presentacion p{
+        font-size: 1.6rem;
+    }
 }
 
 .presentacion-p1 {
@@ -244,17 +226,9 @@ a:hover {
     color: var(--colorFuenteOscura);
 }
 
-.DarkMode .direccion-github{
-    color: var(--claro2);
-}
-
 .barra-lenguajes {
     background: linear-gradient(to left, var(--fondoClaro), var(--fondoClaro2));
     text-align: center;
-}
-
-.DarkBarraLenguajes{
-    background: linear-gradient(to left, black, purple)
 }
 
 @media (min-width:700px) {
@@ -293,29 +267,21 @@ a:hover {
     border: black solid 1px;
 }
 
-.DarkMode{
-    background-color: black;
-    color: white;
-}
-
-
-.DarkMode .interruptor{
-    background-color: var(--colorFuenteOscura2);
-    margin-left: 2.3rem;
-}
-
-@media (min-width:600px){
-    .DarkMode .interruptor{
-        margin-left: 3.1rem;
-    }
-}
-
 .proyectos {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: max(100rem,80%);
     margin: 0 auto;
+}
+
+.tipo_proyecto{
+    background:linear-gradient(to right,var(--claro),var(--claro2));
+    width: 100rem;
+    max-width: 95%;
+    text-align: left;
+    margin: auto;
+    padding: 2rem 4rem;
 }
 
 .proyecto{
@@ -332,10 +298,24 @@ a:hover {
 }
 
 .proyecto p{
+    font-family: var(--fuente2);
     max-width: 40rem;
     display: flex;
     flex-direction: column;
     margin: 2rem;
+    font-size: 1.1rem;
+}
+
+@media(min-width:480px){
+    .proyecto p{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width:638px){
+    .proyecto p{
+        font-size: 1.6rem;
+    }
 }
 
 .proyecto p span{
@@ -349,11 +329,6 @@ a:hover {
     margin: auto;
     padding: 5rem;
     background-color: var(--claro);
-}
-
-.DarkMode .contacto{
-    background-color: var(--fondo);
-    color: var(--claro);
 }
 
 .formulario{
@@ -375,7 +350,7 @@ a:hover {
 }
 
 footer{
-    height: 2rem;
+    height: 4rem;
     max-width: 100rem;
     background: linear-gradient(to right, var(--fondoClaro2),var(--fondoClaro));
     color:var(--colorFuenteOscura2);
@@ -385,3 +360,64 @@ footer{
     text-align: center;
 }
 
+
+/*---------------Modo Oscuro----------------------*/
+
+.DarkBarra{
+    background: linear-gradient(to right, black, purple); 
+    color:white  
+}
+
+.DarkBarra h2{
+    color: var(--claro);
+}
+
+.DarkBarra span{
+    color: var(--claro2);
+}
+
+.DarkResumen{
+    background-color: var(--fondo);
+}
+
+.DarkResumen h1{
+    color: var(--claro);
+}
+
+.DarkResumen h2{
+    color: var(--claro2);
+}
+
+.DarkResumen a{
+    color: antiquewhite;
+}
+
+.DarkMode .direccion-github{
+    color: var(--claro2);
+}
+
+.DarkMode{
+    background-color: black;
+    color: white;
+}
+
+
+.DarkMode .interruptor{
+    background-color: var(--colorFuenteOscura2);
+    margin-left: 2.3rem;
+}
+
+@media (min-width:600px){
+    .DarkMode .interruptor{
+        margin-left: 3.1rem;
+    }
+}
+
+.DarkBarraLenguajes{
+    background: linear-gradient(to left, black, purple)
+}
+
+.DarkMode .contacto{
+    background-color: var(--fondo);
+    color: var(--claro);
+}

@@ -12,6 +12,7 @@ const email=document.querySelector('#email')
 const mensaje=document.querySelector('#mensaje')
 const formulario=document.querySelector('.formulario')
 const footer=document.querySelector('FOOTER')
+const tipo_proyecto=document.querySelector('.tipo_proyecto')
 const datos={
     nombre:'',
     telefono:'',
@@ -38,6 +39,7 @@ function modoOscuro(){
     resumen.classList.toggle('DarkResumen')
     barraLenguajes.classList.toggle('DarkBarraLenguajes')
     footer.classList.toggle('DarkBarra')
+    tipo_proyecto.classList.toggle('DarkBarra')
 };
 
 function validar(e){
