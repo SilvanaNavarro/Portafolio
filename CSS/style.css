@@ -289,6 +289,11 @@ a:hover {
     flex-wrap: wrap;
     align-items: center; 
     justify-content: center;
+    -webkit-box-shadow: 17px 28px 41px 0px rgba(0,0,0,0.56);
+-moz-box-shadow: 17px 28px 41px 0px rgba(0,0,0,0.56);
+box-shadow: 17px 28px 41px 0px rgba(0,0,0,0.56);
+padding: 2rem;
+margin: 2rem;
 }
 
 .proyecto-imagen{
